@@ -15,7 +15,7 @@ const Footer = () => {
             <Link to={'/play'}>
                 <IoNotificationsOutline />
             </Link>
-            <Link to={'/product'}>
+            <Link to={'/login'}>
                 <HiOutlineUser />
             </Link>
         </footer>

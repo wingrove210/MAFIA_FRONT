@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 const LayoutWithHeaderFooter = ({ children }) => (
     <>
-      <Header />
+      <Header/>
         <main className="h-auto w-[100vw]">{children}</main>
       <Footer />
     </>
