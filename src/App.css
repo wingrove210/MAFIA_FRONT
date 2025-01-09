@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: #7B8294;
+body {
+    background: radial-gradient(circle at top left, #7B8294, #1F2125 50%);
+    min-height: 100vh;
 }
+.no-scrollbar {
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Opera */
+}
+
+@font-face {
+    font-family: 'Dune';
+    src: url('/src/fonts/dune-rise/Dune_Rise.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hero';
+    src: url('/src/fonts/hero-2-webfont/HeroLight-Regular.woff') format('truetype');
+}
+@font-face {
+    font-family: 'Rostov';
+    src: url('/src/fonts/Rostov/Rostov.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Clash';
+    src: url('/src/fonts/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf') format('truetype');
+}
+  
