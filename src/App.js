@@ -8,6 +8,7 @@ import Details from "./pages/Details";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProtectedPage from "./pages/Protected";
+import BillboardDetails from "./pages/BillboardDetails";
 import LayoutWithHeaderFooter from "./layouts/LayoutWithFooter";
 import LayoutWithoutHeaderFooter from "./layouts/LayoutWithoutFooter";
 import { UserProvider } from "./contexts/UserContext";
@@ -43,10 +44,18 @@ function App() {
               }
             />
             <Route
-              path="/product"
+              path="/product/:id"
               element={
                 <LayoutWithoutHeaderFooter>
                   <Details />
+                </LayoutWithoutHeaderFooter>
+              }
+            />
+            <Route
+              path="/billboards/:id"
+              element={
+                <LayoutWithoutHeaderFooter>
+                  <BillboardDetails />
                 </LayoutWithoutHeaderFooter>
               }
             />
