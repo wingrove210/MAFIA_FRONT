@@ -28,7 +28,7 @@ function Register() {
     };
   
     try {
-      const response = await fetch('http://localhost:8000/register', {
+      const response = await fetch('http://localhost:8000/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Указываем, что отправляем JSON
